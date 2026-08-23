@@ -1,0 +1,21 @@
+{
+  "name": "discord-webhook-proxy",
+  "version": "1.0.0",
+  "description": "Discord webhook proxy with Supabase authentication",
+  "main": "api/proxy.js",
+  "scripts": {
+    "dev": "vercel dev",
+    "deploy": "vercel deploy --prod"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.39.0",
+    "axios": "^1.6.0",
+    "node-fetch": "^2.6.7"
+  },
+  "devDependencies": {
+    "vercel": "^28.16.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
