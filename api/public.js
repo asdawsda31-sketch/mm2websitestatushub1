@@ -1,7 +1,7 @@
 const axios = require('axios');
 
-const DISCORD_WEBHOOK = "https://discord.com/api/webhooks/1539749293324243025/FFV4wVQRMssXCDmbjCAiTH_WwjKdYNgYPfr_0zhWElOrpMDuT_eU4r3FISpo-q9yMTqh";
-const SECRET_KEY = "$8mQ#vL2@nP&xR5!zK9*WcF4^yJ6?BtG3%HdS7=UeA0+VfN1-XoI9#LpD";
+const DISCORD_WEBHOOK = process.env.DISCORD_WEBHOOK;
+const SECRET_KEY = process.env.SECRET_KEY;
 const MAX_PAYLOAD_SIZE = 1024 * 1024;
 const REQUEST_TIMEOUT = 30000;
 
