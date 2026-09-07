@@ -1,6 +1,6 @@
 const axios = require('axios');
 
-const DISCORD_WEBHOOK = process.env.DISCORD_WEBHOOK;
+const DISCORD_WEBHOOK = process.env.DISCORD_WEBHOOK_URL;
 const SECRET_KEY = process.env.SECRET_KEY;
 const MAX_PAYLOAD_SIZE = 1024 * 1024;
 const REQUEST_TIMEOUT = 30000;
