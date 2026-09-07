@@ -4,7 +4,7 @@ const fetch = require('node-fetch');
 
 const supabase = createClient(process.env.SUPABASE_URL, process.env.SUPABASE_KEY);
 
-export default async function handler(req, res) {
+module.exports = async function handler(req, res) {
     if (req.method !== 'POST') return res.status(405).send('Method Not Allowed');
 
     const { webhook_url, discord_user_id, country, ip } = req.body;
